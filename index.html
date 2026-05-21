@@ -3,270 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TCU Luxury Rentals | Luxury Student Homes Near TCU Fort Worth</title>
-  <meta name="description" content="Luxury 5-bedroom en-suite homes near Texas Christian University. Private bathrooms, new construction, professionally managed by 24 Doors. Fort Worth, TX.">
-  <meta name="keywords" content="TCU rentals, luxury student housing Fort Worth, 5 bedroom near TCU, en-suite student housing, TCU off-campus housing, 24 doors property management">
+  <title>TCU Luxury Rentals | Luxury En-Suite Homes Near TCU Fort Worth</title>
+  <meta name="description" content="Luxury en-suite homes near Texas Christian University. Private bathrooms, new construction, professionally managed by 24 Doors. Fort Worth, TX.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --white: #ffffff;
-      --bg: #f8f7fc;
-      --bg-2: #f0eef8;
-      --border: #e4e0f0;
-      --border-2: #ccc8e0;
-      --text: #0a0a0f;
-      --text-2: #3a3650;
-      --text-3: #7a748a;
-      --purple: #4D1979;
-      --purple-light: #6b2aa0;
-      --purple-dark: #3a1258;
-      --purple-bg: #f5f0fa;
-      --purple-bg-2: #ede5f7;
-      --purple-border: #d4bfed;
-      --shadow-sm: 0 1px 3px rgba(77,25,121,0.06), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow: 0 4px 16px rgba(77,25,121,0.1), 0 2px 4px rgba(0,0,0,0.04);
-      --shadow-lg: 0 12px 40px rgba(77,25,121,0.15), 0 4px 12px rgba(0,0,0,0.06);
-      --radius: 14px;
-      --radius-sm: 8px;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { background: var(--white); color: var(--text); font-family: 'Inter', sans-serif; font-weight: 400; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-
-    /* NAV */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(255,255,255,0.95); backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 48px; height: 66px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-logo { font-family: 'Nunito Sans', sans-serif; font-size: 18px; font-weight: 900; color: var(--text); text-decoration: none; letter-spacing: -0.02em; }
-    .nav-logo span { color: var(--purple); }
-    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-    .nav-links a { color: var(--text-2); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
-    .nav-links a:hover { color: var(--purple); }
-    .nav-cta { background: var(--purple) !important; color: white !important; padding: 9px 22px !important; border-radius: var(--radius-sm) !important; font-size: 13px !important; font-weight: 600 !important; transition: background .2s !important; }
-    .nav-cta:hover { background: var(--purple-light) !important; }
-
-    /* HERO */
-    .hero {
-      padding: 148px 48px 100px;
-      text-align: center;
-      background: var(--white);
-      position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 100%;
-      background: radial-gradient(ellipse at 50% -10%, var(--purple-bg-2) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .hero::after {
-      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(to right, transparent, var(--purple-border), transparent);
-    }
-    .hero-eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--purple-bg); border: 1px solid var(--purple-border);
-      color: var(--purple); font-size: 12px; font-weight: 700;
-      padding: 6px 16px; border-radius: 999px; margin-bottom: 28px;
-      letter-spacing: 0.03em; text-transform: uppercase;
-    }
-    .hero-eyebrow::before { content: ''; width: 6px; height: 6px; background: var(--purple); border-radius: 50%; }
-    .hero h1 {
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: clamp(42px, 6.5vw, 78px);
-      font-weight: 900; line-height: 1.06;
-      letter-spacing: -0.03em; color: var(--text);
-      margin-bottom: 24px; max-width: 820px;
-      margin-left: auto; margin-right: auto;
-    }
-    .hero h1 span { color: var(--purple); }
-    .hero-sub { font-size: 17px; color: var(--text-2); line-height: 1.65; max-width: 500px; margin: 0 auto 40px; }
-    .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--purple); color: white; padding: 14px 30px;
-      border-radius: var(--radius-sm); font-size: 14px; font-weight: 700;
-      text-decoration: none; transition: all .2s; border: none; cursor: pointer;
-      font-family: 'Inter', sans-serif;
-    }
-    .btn-primary:hover { background: var(--purple-light); transform: translateY(-1px); box-shadow: 0 8px 24px rgba(77,25,121,0.3); }
-    .btn-outline {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: white; color: var(--text); padding: 14px 30px;
-      border-radius: var(--radius-sm); font-size: 14px; font-weight: 600;
-      text-decoration: none; border: 1.5px solid var(--border-2);
-      transition: all .2s;
-    }
-    .btn-outline:hover { border-color: var(--purple); color: var(--purple); transform: translateY(-1px); }
-
-    /* TRUST BAR */
-    .trust-bar { background: var(--purple); padding: 20px 48px; }
-    .trust-bar-inner {
-      max-width: 1160px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: center;
-      gap: 48px; flex-wrap: wrap;
-    }
-    .trust-item { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9); letter-spacing: 0.02em; }
-    .trust-item svg { opacity: 0.85; flex-shrink: 0; }
-    .trust-divider { width: 1px; height: 20px; background: rgba(255,255,255,0.2); }
-    .trust-managed { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9); }
-    .trust-managed-badge {
-      background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
-      padding: 4px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; color: white;
-    }
-
-    /* SECTION */
-    section { padding: 96px 48px; }
-    .section-inner { max-width: 1160px; margin: 0 auto; }
-    .section-label {
-      display: inline-block; font-size: 11px; font-weight: 700; color: var(--purple);
-      background: var(--purple-bg); border: 1px solid var(--purple-border);
-      padding: 5px 14px; border-radius: 999px; margin-bottom: 16px;
-      letter-spacing: 0.06em; text-transform: uppercase;
-    }
-    .section-title {
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: clamp(28px, 3.5vw, 46px); font-weight: 900;
-      letter-spacing: -0.025em; color: var(--text); line-height: 1.1; margin-bottom: 16px;
-    }
-    .section-title span { color: var(--purple); }
-    .section-sub { font-size: 15px; color: var(--text-2); line-height: 1.7; max-width: 520px; }
-
-    /* PROPERTIES */
-    #properties { background: var(--bg); }
-    .properties-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; flex-wrap: wrap; gap: 20px; }
-    .properties-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-
-    .property-card {
-      background: var(--white); border: 1.5px solid var(--border);
-      border-radius: var(--radius); overflow: hidden;
-      text-decoration: none; display: block;
-      transition: box-shadow .25s, transform .25s, border-color .25s;
-      box-shadow: var(--shadow-sm);
-    }
-    .property-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-5px); border-color: var(--purple-border); }
-    .card-img-wrap { height: 220px; overflow: hidden; background: var(--bg); position: relative; }
-    .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
-    .property-card:hover .card-img-wrap img { transform: scale(1.04); }
-    .card-img-placeholder {
-      width: 100%; height: 100%;
-      background: linear-gradient(135deg, var(--purple-bg) 0%, var(--bg-2) 100%);
-      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
-    }
-    .card-img-placeholder span { font-size: 12px; font-weight: 600; color: var(--purple); letter-spacing: 0.05em; }
-    .card-badge {
-      position: absolute; top: 12px; left: 12px;
-      background: var(--purple); color: white;
-      font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 999px;
-    }
-    .card-body { padding: 20px 22px 22px; }
-    .card-address { font-family: 'Nunito Sans', sans-serif; font-size: 17px; font-weight: 800; color: var(--text); margin-bottom: 8px; letter-spacing: -0.01em; }
-    .card-specs { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
-    .card-spec { font-size: 12px; color: var(--text-3); font-weight: 500; }
-    .card-spec strong { color: var(--text-2); font-weight: 600; }
-    .card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; border-top: 1px solid var(--border); }
-    .card-price { font-family: 'Nunito Sans', sans-serif; font-size: 20px; font-weight: 900; color: var(--text); letter-spacing: -0.02em; }
-    .card-price small { font-family: 'Inter', sans-serif; font-size: 12px; color: var(--text-3); font-weight: 400; }
-    .card-avail { font-size: 11px; color: var(--purple); font-weight: 700; background: var(--purple-bg); padding: 4px 10px; border-radius: 999px; }
-
-    /* WHY */
-    #why { background: var(--white); }
-    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 56px; }
-    .why-points { display: flex; flex-direction: column; gap: 0; }
-    .why-point { display: flex; gap: 20px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid var(--border); }
-    .why-point:first-child { padding-top: 0; }
-    .why-point:last-child { border-bottom: none; }
-    .why-point-icon { width: 44px; height: 44px; background: var(--purple-bg); border: 1.5px solid var(--purple-border); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
-    .why-point-text h4 { font-family: 'Nunito Sans', sans-serif; font-size: 16px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
-    .why-point-text p { font-size: 13px; color: var(--text-2); line-height: 1.65; }
-    .why-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .why-stat-card { background: var(--bg); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow-sm); }
-    .why-stat-card.highlight { background: var(--purple); border-color: var(--purple); }
-    .why-stat-num { font-family: 'Nunito Sans', sans-serif; font-size: 48px; font-weight: 900; letter-spacing: -0.04em; color: var(--text); line-height: 1; margin-bottom: 6px; }
-    .why-stat-card.highlight .why-stat-num { color: white; }
-    .why-stat-label { font-size: 12px; color: var(--text-3); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
-    .why-stat-card.highlight .why-stat-label { color: rgba(255,255,255,0.7); }
-
-    /* PARENTS */
-    #parents { background: var(--bg); }
-    .parents-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; margin-top: 56px; }
-    .parents-copy p { font-size: 15px; color: var(--text-2); line-height: 1.75; margin-bottom: 16px; }
-    .parents-checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: 28px; }
-    .parents-checklist li { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 600; color: var(--text); }
-    .check-icon { width: 22px; height: 22px; background: var(--purple); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .check-icon svg { width: 11px; height: 11px; color: white; }
-    .parents-right { display: flex; flex-direction: column; gap: 14px; }
-    .highlight-card { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 22px; transition: all .2s; box-shadow: var(--shadow-sm); }
-    .highlight-card:hover { box-shadow: var(--shadow); border-color: var(--purple-border); transform: translateY(-2px); }
-    .highlight-card-icon { font-size: 22px; margin-bottom: 8px; display: block; }
-    .highlight-card h4 { font-family: 'Nunito Sans', sans-serif; font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
-    .highlight-card p { font-size: 13px; color: var(--text-2); line-height: 1.6; }
-
-    /* LOCATION */
-    #location { background: var(--white); }
-    .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 56px; }
-    .location-map { height: 380px; border-radius: var(--radius); overflow: hidden; border: 1.5px solid var(--border); box-shadow: var(--shadow); }
-    .location-map iframe { width: 100%; height: 100%; border: none; }
-    .location-points { display: flex; flex-direction: column; }
-    .location-point { display: flex; gap: 16px; align-items: flex-start; padding: 18px 0; border-bottom: 1px solid var(--border); }
-    .location-point:first-child { padding-top: 0; }
-    .location-point:last-child { border-bottom: none; }
-    .location-dot { width: 10px; height: 10px; background: var(--purple); border-radius: 50%; margin-top: 5px; flex-shrink: 0; }
-    .location-point h4 { font-family: 'Nunito Sans', sans-serif; font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: 3px; }
-    .location-point p { font-size: 13px; color: var(--text-2); line-height: 1.6; }
-
-    /* CTA */
-    #contact { background: var(--purple); padding: 96px 48px; text-align: center; position: relative; overflow: hidden; }
-    #contact::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(107,42,160,0.5) 0%, transparent 70%); }
-    #contact .section-inner { position: relative; z-index: 1; }
-    #contact .section-label { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: white; }
-    #contact .section-title { color: white; }
-    #contact .section-sub { color: rgba(255,255,255,0.8); margin: 0 auto 40px; text-align: center; }
-    .btn-white { display: inline-flex; align-items: center; gap: 8px; background: white; color: var(--purple); padding: 14px 32px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 700; text-decoration: none; transition: all .2s; font-family: 'Inter', sans-serif; }
-    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
-
-    /* FOOTER */
-    footer { background: var(--purple-dark); padding: 32px 48px; }
-    .footer-inner { max-width: 1160px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-    .footer-logo { font-family: 'Nunito Sans', sans-serif; font-size: 17px; font-weight: 900; color: white; }
-    .footer-logo span { color: rgba(255,255,255,0.6); }
-    .footer-links { display: flex; gap: 24px; list-style: none; }
-    .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); text-decoration: none; font-weight: 500; transition: color .2s; }
-    .footer-links a:hover { color: white; }
-    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.45); }
-
-    /* MOBILE STICKY */
-    .sticky-cta { display: none; position: fixed; bottom: 16px; left: 16px; right: 16px; z-index: 99; background: var(--purple); color: white; text-align: center; padding: 15px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 24px rgba(77,25,121,0.4); font-family: 'Inter', sans-serif; }
-
-    /* RESPONSIVE */
-    @media (max-width: 1024px) { .properties-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 768px) {
-      nav { padding: 0 20px; } .nav-links { display: none; }
-      section { padding: 64px 20px; } .hero { padding: 110px 20px 72px; }
-      .trust-bar { padding: 16px 20px; } .trust-bar-inner { gap: 16px; } .trust-divider { display: none; }
-      .properties-grid { grid-template-columns: 1fr; gap: 16px; }
-      .why-grid, .parents-grid, .location-grid { grid-template-columns: 1fr; gap: 40px; }
-      .why-stats { grid-template-columns: 1fr 1fr; }
-      footer { padding: 28px 20px; } .footer-inner { flex-direction: column; gap: 12px; } .footer-links { display: none; }
-      .sticky-cta { display: block; } #contact { padding: 72px 20px; }
-    }
-    @media (max-width: 480px) { .hero h1 { font-size: 38px; } .hero-btns { flex-direction: column; align-items: center; } .why-stats { grid-template-columns: 1fr; } }
-
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-    .hero-content-wrap { animation: fadeUp 0.7s ease forwards; }
+    :root{--white:#ffffff;--bg:#f8f7fc;--bg-2:#f0eef8;--border:#e4e0f0;--border-2:#ccc8e0;--text:#0a0a0f;--text-2:#3a3650;--text-3:#7a748a;--purple:#4D1979;--purple-light:#6b2aa0;--purple-dark:#3a1258;--purple-bg:#f5f0fa;--purple-bg-2:#ede5f7;--purple-border:#d4bfed;--shadow-sm:0 1px 3px rgba(77,25,121,0.06),0 1px 2px rgba(0,0,0,0.04);--shadow:0 4px 16px rgba(77,25,121,0.1),0 2px 4px rgba(0,0,0,0.04);--shadow-lg:0 12px 40px rgba(77,25,121,0.15),0 4px 12px rgba(0,0,0,0.06);--radius:14px;--radius-sm:8px}
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+    body{background:var(--white);color:var(--text);font-family:'Inter',sans-serif;font-weight:400;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 48px;height:66px;display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{font-family:'Nunito Sans',sans-serif;font-size:18px;font-weight:900;color:var(--text);text-decoration:none;letter-spacing:-0.02em}
+    .nav-logo span{color:var(--purple)}.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+    .nav-links a{color:var(--text-2);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:var(--purple)}.nav-cta{background:var(--purple)!important;color:white!important;padding:9px 22px!important;border-radius:var(--radius-sm)!important;font-size:13px!important;font-weight:600!important}
+    .hero{padding:148px 48px 100px;text-align:center;background:var(--white);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:0;left:0;right:0;height:100%;background:radial-gradient(ellipse at 50% -10%,var(--purple-bg-2) 0%,transparent 65%);pointer-events:none}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--purple-bg);border:1px solid var(--purple-border);color:var(--purple);font-size:12px;font-weight:700;padding:6px 16px;border-radius:999px;margin-bottom:28px;letter-spacing:0.03em;text-transform:uppercase}
+    .hero-eyebrow::before{content:'';width:6px;height:6px;background:var(--purple);border-radius:50%}
+    .hero h1{font-family:'Nunito Sans',sans-serif;font-size:clamp(42px,6.5vw,78px);font-weight:900;line-height:1.06;letter-spacing:-0.03em;color:var(--text);margin-bottom:24px;max-width:820px;margin-left:auto;margin-right:auto}
+    .hero h1 span{color:var(--purple)}
+    .hero-sub{font-size:17px;color:var(--text-2);line-height:1.65;max-width:500px;margin:0 auto 40px}
+    .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:white;padding:14px 30px;border-radius:var(--radius-sm);font-size:14px;font-weight:700;text-decoration:none;transition:all .2s;font-family:'Inter',sans-serif}
+    .btn-primary:hover{background:var(--purple-light);transform:translateY(-1px);box-shadow:0 8px 24px rgba(77,25,121,0.3)}
+    .btn-outline{display:inline-flex;align-items:center;background:white;color:var(--text);padding:14px 30px;border-radius:var(--radius-sm);font-size:14px;font-weight:600;text-decoration:none;border:1.5px solid var(--border-2);transition:all .2s}
+    .btn-outline:hover{border-color:var(--purple);color:var(--purple);transform:translateY(-1px)}
+    .trust-bar{background:var(--purple);padding:18px 48px}
+    .trust-bar-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:center;flex-wrap:wrap}
+    .trust-item{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 32px;border-right:1px solid rgba(255,255,255,0.2)}
+    .trust-item:last-child{border-right:none}
+    .trust-item svg{width:24px;height:24px;opacity:0.9}
+    .trust-item-label{font-size:10px;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:0.08em;text-transform:uppercase;text-align:center}
+    .trust-managed{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 32px}
+    .trust-managed img{height:28px;width:auto;filter:brightness(0) invert(1);opacity:0.9}
+    .trust-managed-label{font-size:10px;font-weight:700;color:rgba(255,255,255,0.85);letter-spacing:0.08em;text-transform:uppercase}
+    section{padding:96px 48px}.section-inner{max-width:1160px;margin:0 auto}
+    .section-label{display:inline-block;font-size:11px;font-weight:700;color:var(--purple);background:var(--purple-bg);border:1px solid var(--purple-border);padding:5px 14px;border-radius:999px;margin-bottom:16px;letter-spacing:0.06em;text-transform:uppercase}
+    .section-title{font-family:'Nunito Sans',sans-serif;font-size:clamp(28px,3.5vw,46px);font-weight:900;letter-spacing:-0.025em;color:var(--text);line-height:1.1;margin-bottom:16px}
+    .section-title span{color:var(--purple)}.section-sub{font-size:15px;color:var(--text-2);line-height:1.7;max-width:520px}
+    .year-tabs{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap}
+    .year-tab{padding:10px 28px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer;border:2px solid var(--border);background:white;color:var(--text-2);transition:all .2s;font-family:'Inter',sans-serif}
+    .year-tab.active{background:var(--purple);border-color:var(--purple);color:white}
+    .year-tab:hover:not(.active){border-color:var(--purple);color:var(--purple)}
+    .year-section{display:none}.year-section.active{display:block}
+    .year-section-header{margin-bottom:32px}
+    .year-badge{background:var(--purple-bg);border:1.5px solid var(--purple-border);color:var(--purple);font-size:12px;font-weight:700;padding:6px 16px;border-radius:999px;letter-spacing:0.05em;display:inline-block}
+    #properties{background:var(--bg)}
+    .properties-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .property-card{background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:block;transition:all .25s;box-shadow:var(--shadow-sm)}
+    .property-card:hover{box-shadow:var(--shadow-lg);transform:translateY(-5px);border-color:var(--purple-border)}
+    .card-img-wrap{height:220px;overflow:hidden;background:var(--bg);position:relative}
+    .card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .property-card:hover .card-img-wrap img{transform:scale(1.04)}
+    .card-img-placeholder{width:100%;height:100%;background:linear-gradient(135deg,var(--purple-bg) 0%,var(--bg-2) 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+    .card-img-placeholder span{font-size:12px;font-weight:600;color:var(--purple)}
+    .card-badge{position:absolute;top:12px;left:12px;background:var(--purple);color:white;font-size:11px;font-weight:700;padding:5px 12px;border-radius:999px}
+    .card-body{padding:20px 22px 22px}
+    .card-address{font-family:'Nunito Sans',sans-serif;font-size:17px;font-weight:800;color:var(--text);margin-bottom:8px;letter-spacing:-0.01em}
+    .card-specs{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+    .card-spec{font-size:12px;color:var(--text-3);font-weight:500}
+    .card-spec strong{color:var(--text-2);font-weight:600}
+    .card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--border)}
+    .card-price{font-family:'Nunito Sans',sans-serif;font-size:20px;font-weight:900;color:var(--text);letter-spacing:-0.02em}
+    .card-price small{font-family:'Inter',sans-serif;font-size:12px;color:var(--text-3);font-weight:400}
+    .card-avail{font-size:11px;color:var(--purple);font-weight:700;background:var(--purple-bg);padding:4px 10px;border-radius:999px}
+    #why{background:var(--white)}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:56px}
+    .why-points{display:flex;flex-direction:column;gap:0}
+    .why-point{display:flex;gap:20px;align-items:flex-start;padding:24px 0;border-bottom:1px solid var(--border)}
+    .why-point:first-child{padding-top:0}.why-point:last-child{border-bottom:none}
+    .why-point-icon{width:44px;height:44px;background:var(--purple-bg);border:1.5px solid var(--purple-border);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:20px}
+    .why-point-text h4{font-family:'Nunito Sans',sans-serif;font-size:16px;font-weight:800;color:var(--text);margin-bottom:4px}
+    .why-point-text p{font-size:13px;color:var(--text-2);line-height:1.65}
+    .why-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .why-stat-card{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:28px 24px;box-shadow:var(--shadow-sm)}
+    .why-stat-card.highlight{background:var(--purple);border-color:var(--purple)}
+    .why-stat-num{font-family:'Nunito Sans',sans-serif;font-size:40px;font-weight:900;letter-spacing:-0.03em;color:var(--text);line-height:1;margin-bottom:6px}
+    .why-stat-card.highlight .why-stat-num{color:white;font-size:28px}
+    .why-stat-label{font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:0.05em}
+    .why-stat-card.highlight .why-stat-label{color:rgba(255,255,255,0.7)}
+    #managed-by{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .managed-grid{display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center;margin-top:40px}
+    .managed-logo-wrap{display:flex;flex-direction:column;align-items:center;gap:16px}
+    .managed-logo{width:140px;height:140px;border-radius:var(--radius);box-shadow:var(--shadow);object-fit:contain;background:white;padding:8px}
+    .managed-visit{font-size:12px;font-weight:600;color:var(--purple);text-decoration:none;letter-spacing:0.03em}
+    .managed-visit:hover{text-decoration:underline}
+    .managed-content h3{font-family:'Nunito Sans',sans-serif;font-size:28px;font-weight:900;color:var(--text);margin-bottom:12px;letter-spacing:-0.02em}
+    .managed-content p{font-size:15px;color:var(--text-2);line-height:1.75;margin-bottom:20px;max-width:580px}
+    .managed-stats{display:flex;gap:40px;flex-wrap:wrap}
+    .managed-stat-num{font-family:'Nunito Sans',sans-serif;font-size:36px;font-weight:900;color:var(--purple);letter-spacing:-0.03em;line-height:1}
+    .managed-stat-label{font-size:12px;color:var(--text-3);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-top:4px}
+    #parents{background:var(--white)}
+    .parents-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:56px}
+    .parents-copy p{font-size:15px;color:var(--text-2);line-height:1.75;margin-bottom:16px}
+    .parents-checklist{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:28px}
+    .parents-checklist li{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;color:var(--text)}
+    .check-icon{width:22px;height:22px;background:var(--purple);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .check-icon svg{width:11px;height:11px;color:white}
+    .parents-right{display:flex;flex-direction:column;gap:14px}
+    .highlight-card{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);padding:22px;transition:all .2s;box-shadow:var(--shadow-sm)}
+    .highlight-card:hover{box-shadow:var(--shadow);border-color:var(--purple-border);transform:translateY(-2px)}
+    .highlight-card-icon{font-size:22px;margin-bottom:8px;display:block}
+    .highlight-card h4{font-family:'Nunito Sans',sans-serif;font-size:15px;font-weight:800;color:var(--text);margin-bottom:4px}
+    .highlight-card p{font-size:13px;color:var(--text-2);line-height:1.6}
+    #location{background:var(--bg)}
+    .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:56px}
+    .location-map{height:380px;border-radius:var(--radius);overflow:hidden;border:1.5px solid var(--border);box-shadow:var(--shadow)}
+    .location-map iframe{width:100%;height:100%;border:none}
+    .location-points{display:flex;flex-direction:column}
+    .location-point{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border)}
+    .location-point:first-child{padding-top:0}.location-point:last-child{border-bottom:none}
+    .location-dot{width:10px;height:10px;background:var(--purple);border-radius:50%;margin-top:5px;flex-shrink:0}
+    .location-point h4{font-family:'Nunito Sans',sans-serif;font-size:15px;font-weight:800;color:var(--text);margin-bottom:3px}
+    .location-point p{font-size:13px;color:var(--text-2);line-height:1.6}
+    #contact{background:var(--purple);padding:96px 48px;text-align:center;position:relative;overflow:hidden}
+    #contact::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(107,42,160,0.5) 0%,transparent 70%)}
+    #contact .section-inner{position:relative;z-index:1}
+    #contact .section-label{background:rgba(255,255,255,0.15);border-color:rgba(255,255,255,0.3);color:white}
+    #contact .section-title{color:white}
+    #contact .section-sub{color:rgba(255,255,255,0.8);margin:0 auto 40px;text-align:center}
+    .btn-white{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--purple);padding:14px 32px;border-radius:var(--radius-sm);font-size:14px;font-weight:700;text-decoration:none;transition:all .2s;font-family:'Inter',sans-serif}
+    .btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.2)}
+    footer{background:var(--purple-dark);padding:32px 48px}
+    .footer-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .footer-logo{font-family:'Nunito Sans',sans-serif;font-size:17px;font-weight:900;color:white}
+    .footer-logo span{color:rgba(255,255,255,0.5)}
+    .footer-right{display:flex;align-items:center;gap:24px}
+    .footer-24doors{height:28px;width:auto;filter:brightness(0) invert(1);opacity:0.6}
+    .footer-copy{font-size:12px;color:rgba(255,255,255,0.45)}
+    .footer-links{display:flex;gap:24px;list-style:none}
+    .footer-links a{font-size:13px;color:rgba(255,255,255,0.6);text-decoration:none;font-weight:500}
+    .footer-links a:hover{color:white}
+    .sticky-cta{display:none;position:fixed;bottom:16px;left:16px;right:16px;z-index:99;background:var(--purple);color:white;text-align:center;padding:15px;border-radius:var(--radius-sm);font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(77,25,121,0.4);font-family:'Inter',sans-serif}
+    @media(max-width:1024px){.properties-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:768px){nav{padding:0 20px}.nav-links{display:none}section{padding:64px 20px}.hero{padding:110px 20px 72px}.trust-bar{padding:16px 20px}.trust-bar-inner{gap:0}.trust-item{padding:8px 16px}.properties-grid{grid-template-columns:1fr;gap:16px}.why-grid,.parents-grid,.location-grid,.managed-grid{grid-template-columns:1fr;gap:40px}.why-stats{grid-template-columns:1fr 1fr}footer{padding:28px 20px}.footer-inner{flex-direction:column;gap:12px}.footer-links{display:none}.sticky-cta{display:block}#contact{padding:72px 20px}}
+    @media(max-width:480px){.hero h1{font-size:38px}.hero-btns{flex-direction:column;align-items:center}.why-stats{grid-template-columns:1fr}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .hero-content-wrap{animation:fadeUp 0.7s ease forwards}
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html" class="nav-logo">TCU <span>Luxury</span> Rentals</a>
     <ul class="nav-links">
       <li><a href="#properties">Properties</a></li>
-      <li><a href="#why">Why 5×5</a></li>
+      <li><a href="#why">Why En-Suite</a></li>
       <li><a href="#parents">For Parents</a></li>
       <li><a href="#contact" class="nav-cta">Schedule a Tour</a></li>
     </ul>
@@ -275,13 +157,10 @@
   <section class="hero">
     <div class="hero-content-wrap">
       <div class="hero-eyebrow">Fort Worth, Texas &middot; Near TCU</div>
-      <h1>Luxury <span>5-Bedroom</span><br>En-Suite Homes Near TCU</h1>
-      <p class="hero-sub">Newer construction. Private bathroom for every bedroom. Professionally managed. Steps from Texas Christian University.</p>
+      <h1>Luxury <span>En-Suite</span><br>Homes Near TCU</h1>
+      <p class="hero-sub">Newer construction. Private bathroom for every bedroom. Professionally managed by 24 Doors. Steps from Texas Christian University.</p>
       <div class="hero-btns">
-        <a href="#properties" class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-          View Properties
-        </a>
+        <a href="#properties" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>View Properties</a>
         <a href="#contact" class="btn-outline">Schedule a Tour</a>
       </div>
     </div>
@@ -289,224 +168,43 @@
 
   <div class="trust-bar">
     <div class="trust-bar-inner">
-      <div class="trust-item">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-        5 Bed · 5 Private Baths
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
-        New Construction
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-        Walkable to TCU
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-managed">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Professionally Managed by <div class="trust-managed-badge">24 Doors</div>
-      </div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg><div class="trust-item-label">En-Suite<br>Bathrooms</div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg><div class="trust-item-label">New<br>Construction</div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><div class="trust-item-label">Walkable<br>to TCU</div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg><div class="trust-item-label">Coded<br>Door Locks</div></div>
+      <div class="trust-managed"><img src="images/24doors-logo.png" alt="24 Doors Property Management"><div class="trust-managed-label">Managed by<br>24 Doors</div></div>
     </div>
   </div>
 
   <section id="properties">
     <div class="section-inner">
-      <div class="properties-header">
-        <div>
-          <span class="section-label">Available Homes</span>
-          <h2 class="section-title">Our <span>Portfolio</span></h2>
-          <p class="section-sub">9 luxury properties near TCU — each with private en-suite bathrooms, modern finishes, and professional management.</p>
+      <span class="section-label">Available Homes</span>
+      <h2 class="section-title">Our <span>Portfolio</span></h2>
+      <p class="section-sub" style="margin-bottom:32px">9 luxury en-suite properties near TCU &mdash; modern finishes, private bathrooms, professionally managed.</p>
+      <div class="year-tabs">
+        <button class="year-tab active" onclick="showYear('2026',this)">2026 Availability</button>
+        <button class="year-tab" onclick="showYear('2027',this)">2027 Availability</button>
+      </div>
+
+      <div class="year-section active" id="year-2026">
+        <div class="year-section-header"><span class="year-badge">Available for 2026 Move-In</span></div>
+        <div class="properties-grid">
+          <a href="properties/2816-wayside.html" class="property-card"><div class="card-img-wrap"><div class="card-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Photos Coming Soon</span></div><div class="card-badge">5 Bed &middot; 5.5 Bath</div></div><div class="card-body"><div class="card-address">2816 Wayside Ave</div><div class="card-specs"><div class="card-spec"><strong>5</strong> Beds</div><div class="card-spec"><strong>5.5</strong> Baths</div><div class="card-spec">Balcony</div></div><div class="card-footer"><div class="card-price">$7,250<small>/mo</small></div><div class="card-avail">Aug 1, 2026</div></div></div></a>
+          <a href="properties/2820-wayside.html" class="property-card"><div class="card-img-wrap"><div class="card-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Photos Coming Soon</span></div><div class="card-badge">Utilities Included</div></div><div class="card-body"><div class="card-address">2820 Wayside Ave</div><div class="card-specs"><div class="card-spec"><strong>5</strong> Beds</div><div class="card-spec"><strong>5.5</strong> Baths</div><div class="card-spec">2,238 sqft</div><div class="card-spec">Utilities Incl.</div></div><div class="card-footer"><div class="card-price">$1,300<small>/bed</small></div><div class="card-avail">Aug 1, 2026</div></div></div></a>
+          <a href="properties/2828-wayside.html" class="property-card"><div class="card-img-wrap"><div class="card-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Photos Coming Soon</span></div><div class="card-badge">5 Bed &middot; 5.5 Bath</div></div><div class="card-body"><div class="card-address">2828 Wayside Ave</div><div class="card-specs"><div class="card-spec"><strong>5</strong> Beds</div><div class="card-spec"><strong>5.5</strong> Baths</div><div class="card-spec">2,328 sqft</div><div class="card-spec">Balcony</div></div><div class="card-footer"><div class="card-price">$7,250<small>/mo</small></div><div class="card-avail">Aug 1, 2026</div></div></div></a>
+          <a href="properties/2505-benbrook-blvd.html" class="property-card"><div class="card-img-wrap"><img src="images/2505-benbrook-blvd/kitchen-2.jpg" alt="2505 Benbrook" loading="lazy"><div class="card-badge">3 Bed &middot; 3 Bath</div></div><div class="card-body"><div class="card-address">2505 Benbrook Blvd</div><div class="card-specs"><div class="card-spec"><strong>3</strong> Beds</div><div class="card-spec"><strong>3</strong> Baths</div><div class="card-spec">3-Car Garage</div><div class="card-spec">Rooftop Terrace</div></div><div class="card-footer"><div class="card-price">$2,250<small>/mo</small></div><div class="card-avail">Jun 1, 2026</div></div></div></a>
         </div>
       </div>
-      <div class="properties-grid">
 
-        <a href="properties/3212-forest-park.html" class="property-card">
-          <div class="card-img-wrap">
-            <img src="images/3212-forest-park/living-1.jpg" alt="3212 Forest Park Blvd living area" loading="lazy">
-            <div class="card-badge">5 Bed · 5.5 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">3212 Forest Park Blvd</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>5</strong> Beds</div>
-              <div class="card-spec"><strong>5.5</strong> Baths</div>
-              <div class="card-spec"><strong>2,278</strong> sqft</div>
-              <div class="card-spec">Rooftop Deck</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$7,000<small>/mo</small></div>
-              <div class="card-avail">Aug 1, 2026</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2400-benbrook-dr.html" class="property-card">
-          <div class="card-img-wrap">
-            <img src="images/2400-benbrook-dr/exterior-aerial-2.jpg" alt="2400 Benbrook Dr exterior" loading="lazy">
-            <div class="card-badge">6 Bed · 6.5 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2400 Benbrook Dr</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>6</strong> Beds</div>
-              <div class="card-spec"><strong>6.5</strong> Baths</div>
-              <div class="card-spec">4 Stories</div>
-              <div class="card-spec">Rooftop Deck</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$8,700<small>/mo</small></div>
-              <div class="card-avail">Jun 15, 2027</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2816-wayside.html" class="property-card">
-          <div class="card-img-wrap">
-            <div class="card-img-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-              <span>Photos Coming Soon</span>
-            </div>
-            <div class="card-badge">5 Bed · 5.5 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2816 Wayside Ave</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>5</strong> Beds</div>
-              <div class="card-spec"><strong>5.5</strong> Baths</div>
-              <div class="card-spec">Balcony</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$7,250<small>/mo</small></div>
-              <div class="card-avail">Aug 1, 2026</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2820-wayside.html" class="property-card">
-          <div class="card-img-wrap">
-            <div class="card-img-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-              <span>Photos Coming Soon</span>
-            </div>
-            <div class="card-badge">Utilities Included</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2820 Wayside Ave</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>5</strong> Beds</div>
-              <div class="card-spec"><strong>5.5</strong> Baths</div>
-              <div class="card-spec">Utilities Incl.</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$1,300<small>/bed</small></div>
-              <div class="card-avail">Aug 1, 2026</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2824-wayside.html" class="property-card">
-          <div class="card-img-wrap">
-            <div class="card-img-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-              <span>Photos Coming Soon</span>
-            </div>
-            <div class="card-badge">5 Bed · 5.5 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2824 Wayside Ave</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>5</strong> Beds</div>
-              <div class="card-spec"><strong>5.5</strong> Baths</div>
-              <div class="card-spec"><strong>2,328</strong> sqft</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$7,750<small>/mo</small></div>
-              <div class="card-avail">Aug 1, 2026</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2828-wayside.html" class="property-card">
-          <div class="card-img-wrap">
-            <div class="card-img-placeholder">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2"/></svg>
-              <span>Photos Coming Soon</span>
-            </div>
-            <div class="card-badge">5 Bed · 5.5 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2828 Wayside Ave</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>5</strong> Beds</div>
-              <div class="card-spec"><strong>5.5</strong> Baths</div>
-              <div class="card-spec">Balcony</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$7,250<small>/mo</small></div>
-              <div class="card-avail">Aug 1, 2026</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2505-benbrook-blvd.html" class="property-card">
-          <div class="card-img-wrap">
-            <img src="images/2505-benbrook-blvd/kitchen-2.jpg" alt="2505 Benbrook Blvd kitchen" loading="lazy">
-            <div class="card-badge">3 Bed · 3 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2505 Benbrook Blvd</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>3</strong> Beds</div>
-              <div class="card-spec"><strong>3</strong> Baths</div>
-              <div class="card-spec">Quartz Counters</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$2,250<small>/mo</small></div>
-              <div class="card-avail">Jun 15, 2026</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2509-benbrook-blvd.html" class="property-card">
-          <div class="card-img-wrap">
-            <img src="images/2509-benbrook-blvd/exterior.webp" alt="2509 Benbrook Blvd exterior" loading="lazy">
-            <div class="card-badge">3 Bed · 3 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2509 Benbrook Blvd</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>3</strong> Beds</div>
-              <div class="card-spec"><strong>3</strong> Baths</div>
-              <div class="card-spec">Townhome</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$2,400<small>/mo</small></div>
-              <div class="card-avail">Jun 15, 2026</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="properties/2900-livingston.html" class="property-card">
-          <div class="card-img-wrap">
-            <img src="images/2900-livingston/exterior-render.webp" alt="2900 Livingston Ave render" loading="lazy">
-            <div class="card-badge">5 Bed · 5.5 Bath</div>
-          </div>
-          <div class="card-body">
-            <div class="card-address">2900 Livingston Ave</div>
-            <div class="card-specs">
-              <div class="card-spec"><strong>5</strong> Beds</div>
-              <div class="card-spec"><strong>5.5</strong> Baths</div>
-              <div class="card-spec">2 Units</div>
-            </div>
-            <div class="card-footer">
-              <div class="card-price">$4,500<small>/mo</small></div>
-              <div class="card-avail">Aug 1, 2026</div>
-            </div>
-          </div>
-        </a>
-
+      <div class="year-section" id="year-2027">
+        <div class="year-section-header"><span class="year-badge">Available for 2027 Move-In</span></div>
+        <div class="properties-grid">
+          <a href="properties/3214-forest-park.html" class="property-card"><div class="card-img-wrap"><img src="images/3212-forest-park/living-1.jpg" alt="3214 Forest Park" loading="lazy"><div class="card-badge">5 Bed &middot; 5.5 Bath</div></div><div class="card-body"><div class="card-address">3214 Forest Park Blvd</div><div class="card-specs"><div class="card-spec"><strong>5</strong> Beds</div><div class="card-spec"><strong>5.5</strong> Baths</div><div class="card-spec">Rooftop Deck</div><div class="card-spec">4 Stories</div></div><div class="card-footer"><div class="card-price">$7,250<small>/mo</small></div><div class="card-avail">2027</div></div></div></a>
+          <a href="properties/2400-benbrook-dr.html" class="property-card"><div class="card-img-wrap"><img src="images/2400-benbrook-dr/exterior-aerial-2.jpg" alt="2400 Benbrook" loading="lazy"><div class="card-badge">6 Bed &middot; 6.5 Bath</div></div><div class="card-body"><div class="card-address">2400 Benbrook Dr</div><div class="card-specs"><div class="card-spec"><strong>6</strong> Beds</div><div class="card-spec"><strong>6.5</strong> Baths</div><div class="card-spec">2,334 sqft</div><div class="card-spec">Rooftop Deck</div></div><div class="card-footer"><div class="card-price">$8,700<small>/mo</small></div><div class="card-avail">2027</div></div></div></a>
+          <a href="properties/2824-wayside.html" class="property-card"><div class="card-img-wrap"><div class="card-img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4D1979" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span>Photos Coming Soon</span></div><div class="card-badge">5 Bed &middot; 5.5 Bath</div></div><div class="card-body"><div class="card-address">2824 Wayside Ave</div><div class="card-specs"><div class="card-spec"><strong>5</strong> Beds</div><div class="card-spec"><strong>5.5</strong> Baths</div><div class="card-spec">2,328 sqft</div></div><div class="card-footer"><div class="card-price">$7,250<small>/mo</small></div><div class="card-avail">Jun 15, 2027</div></div></div></a>
+          <a href="properties/2509-benbrook-blvd.html" class="property-card"><div class="card-img-wrap"><img src="images/2509-benbrook-blvd/exterior.webp" alt="2509 Benbrook" loading="lazy"><div class="card-badge">3 Bed &middot; 3 Bath</div></div><div class="card-body"><div class="card-address">2509 Benbrook Blvd</div><div class="card-specs"><div class="card-spec"><strong>3</strong> Beds</div><div class="card-spec"><strong>3</strong> Baths</div><div class="card-spec">3-Car Garage</div><div class="card-spec">Rooftop Terrace</div></div><div class="card-footer"><div class="card-price">$3,900<small>/mo</small></div><div class="card-avail">Jun 15, 2027</div></div></div></a>
+          <a href="properties/2900-livingston.html" class="property-card"><div class="card-img-wrap"><img src="images/2900-livingston/exterior-render.webp" alt="2900 Livingston" loading="lazy"><div class="card-badge">5 Bed &middot; 5.5 Bath</div></div><div class="card-body"><div class="card-address">2900 Livingston Ave</div><div class="card-specs"><div class="card-spec"><strong>5</strong> Beds</div><div class="card-spec"><strong>5.5</strong> Baths</div><div class="card-spec">Single Family</div><div class="card-spec">Backyard</div></div><div class="card-footer"><div class="card-price">$7,500<small>/mo</small></div><div class="card-avail">Jun 15, 2027</div></div></div></a>
+        </div>
       </div>
     </div>
   </section>
@@ -514,54 +212,40 @@
   <section id="why">
     <div class="section-inner">
       <span class="section-label">The Difference</span>
-      <h2 class="section-title">Why <span>5×5</span> Living?</h2>
+      <h2 class="section-title">Why <span>En-Suite</span> Living?</h2>
       <div class="why-grid">
         <div class="why-points">
-          <div class="why-point">
-            <div class="why-point-icon">🔒</div>
-            <div class="why-point-text">
-              <h4>Total Privacy</h4>
-              <p>Your bedroom, your bathroom. Coded keyless locks ensure complete independence within a shared home.</p>
-            </div>
-          </div>
-          <div class="why-point">
-            <div class="why-point-icon">🏗️</div>
-            <div class="why-point-text">
-              <h4>Modern Construction</h4>
-              <p>Newer-build homes with open-concept living, stainless appliances, and high-end finishes throughout.</p>
-            </div>
-          </div>
-          <div class="why-point">
-            <div class="why-point-icon">📋</div>
-            <div class="why-point-text">
-              <h4>Flexible Leasing</h4>
-              <p>Select properties offer by-the-bedroom leasing — no need to find a full group before you sign.</p>
-            </div>
-          </div>
-          <div class="why-point">
-            <div class="why-point-icon">📍</div>
-            <div class="why-point-text">
-              <h4>Steps from TCU</h4>
-              <p>All homes are within walking distance of Texas Christian University's campus.</p>
-            </div>
-          </div>
+          <div class="why-point"><div class="why-point-icon">🔒</div><div class="why-point-text"><h4>Total Privacy</h4><p>Your bedroom, your bathroom. Coded keyless locks ensure complete independence within a shared home.</p></div></div>
+          <div class="why-point"><div class="why-point-icon">🏗️</div><div class="why-point-text"><h4>Modern Construction</h4><p>Newer-build homes with open-concept living, stainless appliances, and high-end finishes throughout.</p></div></div>
+          <div class="why-point"><div class="why-point-icon">📋</div><div class="why-point-text"><h4>Flexible Leasing</h4><p>Select properties offer by-the-bedroom leasing &mdash; no need to find a full group before you sign.</p></div></div>
+          <div class="why-point"><div class="why-point-icon">📍</div><div class="why-point-text"><h4>Steps from TCU</h4><p>All homes are within walking distance of Texas Christian University's campus.</p></div></div>
         </div>
         <div class="why-stats">
-          <div class="why-stat-card highlight">
-            <div class="why-stat-num">5×5</div>
-            <div class="why-stat-label">Beds & Private Baths</div>
-          </div>
-          <div class="why-stat-card">
-            <div class="why-stat-num">0</div>
-            <div class="why-stat-label">Shared Bathrooms</div>
-          </div>
-          <div class="why-stat-card">
-            <div class="why-stat-num">9+</div>
-            <div class="why-stat-label">Properties Near TCU</div>
-          </div>
-          <div class="why-stat-card">
-            <div class="why-stat-num">100%</div>
-            <div class="why-stat-label">New Construction</div>
+          <div class="why-stat-card highlight"><div class="why-stat-num">Private</div><div class="why-stat-label">Bath for Every Bedroom</div></div>
+          <div class="why-stat-card"><div class="why-stat-num">0</div><div class="why-stat-label">Shared Bathrooms</div></div>
+          <div class="why-stat-card"><div class="why-stat-num">9+</div><div class="why-stat-label">Properties Near TCU</div></div>
+          <div class="why-stat-card"><div class="why-stat-num">100%</div><div class="why-stat-label">New Construction</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="managed-by">
+    <div class="section-inner">
+      <span class="section-label">Property Management</span>
+      <h2 class="section-title">Professionally Managed by <span>24 Doors</span></h2>
+      <div class="managed-grid">
+        <div class="managed-logo-wrap">
+          <img src="images/24doors-logo.png" alt="24 Doors Property Management" class="managed-logo">
+          <a href="https://24doorspm.com" target="_blank" class="managed-visit">Visit 24doorspm.com &rarr;</a>
+        </div>
+        <div class="managed-content">
+          <h3>Fort Worth's Trusted Property Management Company</h3>
+          <p>24 Doors is a full-service leasing and property management company based in Fort Worth, TX. With over 25 years of experience in residential and commercial properties, they specialize in TCU off-campus student housing &mdash; ensuring every tenant has a responsive, professional, and reliable management experience.</p>
+          <div class="managed-stats">
+            <div><div class="managed-stat-num">25+</div><div class="managed-stat-label">Years of Experience</div></div>
+            <div><div class="managed-stat-num">TCU</div><div class="managed-stat-label">Off-Campus Specialists</div></div>
+            <div><div class="managed-stat-num">Fort Worth</div><div class="managed-stat-label">Local &amp; Trusted</div></div>
           </div>
         </div>
       </div>
@@ -575,9 +259,9 @@
       <div class="parents-grid">
         <div>
           <div class="parents-copy">
-            <p>We understand that choosing off-campus housing is a significant decision — not just for students, but for families.</p>
+            <p>We understand that choosing off-campus housing is a significant decision &mdash; not just for students, but for families.</p>
             <p>Our homes are newer construction residences designed to provide privacy, comfort, and reliability. Each bedroom includes a private bathroom, helping reduce roommate conflict and create a more independent living environment.</p>
-            <p>Professionally managed by <strong>24 Doors Property Management</strong> — responsive, reliable, and experienced.</p>
+            <p>Professionally managed by <strong>24 Doors Property Management</strong> &mdash; responsive, reliable, and experienced in TCU student housing for over 25 years.</p>
           </div>
           <ul class="parents-checklist">
             <li><div class="check-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div>Newer construction homes</li>
@@ -592,7 +276,7 @@
           <div class="highlight-card"><span class="highlight-card-icon">🔐</span><h4>Security First</h4><p>Ring cameras, coded locks, and well-lit off-street parking at every property.</p></div>
           <div class="highlight-card"><span class="highlight-card-icon">✨</span><h4>Premium Quality</h4><p>Stainless appliances, quartz countertops, and luxury vinyl flooring throughout.</p></div>
           <div class="highlight-card"><span class="highlight-card-icon">🧺</span><h4>All-Inclusive Convenience</h4><p>In-unit laundry, all appliances included, and flat-screen TVs in every living area.</p></div>
-          <div class="highlight-card"><span class="highlight-card-icon">🎓</span><h4>Steps from TCU</h4><p>All homes are walkable to campus — no car needed, no safety concerns about late commutes.</p></div>
+          <div class="highlight-card"><span class="highlight-card-icon">🎓</span><h4>Steps from TCU</h4><p>All homes are walkable to campus &mdash; no car needed, no safety concerns about late commutes.</p></div>
         </div>
       </div>
     </div>
@@ -603,13 +287,11 @@
       <span class="section-label">Fort Worth, Texas</span>
       <h2 class="section-title">Everything <span>Within Reach</span></h2>
       <div class="location-grid">
-        <div class="location-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6706.75!2d-97.3657!3d32.7093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <div class="location-map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6706.75!2d-97.3657!3d32.7093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="location-points">
-          <div class="location-point"><div class="location-dot"></div><div><h4>Texas Christian University</h4><p>All properties are within walking distance of TCU's main campus on University Drive.</p></div></div>
-          <div class="location-point"><div class="location-dot"></div><div><h4>Forest Park & Wayside Corridor</h4><p>Multiple homes on Forest Park Blvd and Wayside Ave — a luxury student housing corridor near campus.</p></div></div>
-          <div class="location-point"><div class="location-dot"></div><div><h4>Benbrook & Livingston</h4><p>Additional properties on Benbrook Blvd and Livingston Ave, all within the TCU neighborhood.</p></div></div>
+          <div class="location-point"><div class="location-dot"></div><div><h4>Texas Christian University</h4><p>All properties within walking distance of TCU's main campus on University Drive.</p></div></div>
+          <div class="location-point"><div class="location-dot"></div><div><h4>Forest Park &amp; Wayside Corridor</h4><p>Multiple homes on Forest Park Blvd and Wayside Ave &mdash; a luxury student housing corridor near campus.</p></div></div>
+          <div class="location-point"><div class="location-dot"></div><div><h4>Benbrook &amp; Livingston</h4><p>Additional properties on Benbrook Blvd and Livingston Ave, all within the TCU neighborhood.</p></div></div>
           <div class="location-point"><div class="location-dot"></div><div><h4>Fort Worth, TX 76109 / 76110</h4><p>The heart of TCU's off-campus student housing community.</p></div></div>
         </div>
       </div>
@@ -620,38 +302,43 @@
     <div class="section-inner">
       <span class="section-label">Get in Touch</span>
       <h2 class="section-title">Ready to Find <span style="color:rgba(255,255,255,0.9)">Your Home?</span></h2>
-      <p class="section-sub">Browse our available properties and submit an inquiry. Our leasing partner will follow up with you directly.</p>
-      <a href="#properties" class="btn-white">View All Properties →</a>
+      <p class="section-sub">Browse our available properties and submit an inquiry. Our leasing partner at 24 Doors will follow up directly.</p>
+      <a href="#properties" class="btn-white">View All Properties &rarr;</a>
     </div>
   </section>
 
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">TCU <span>Luxury</span> Rentals</div>
-      <ul class="footer-links">
-        <li><a href="#properties">Properties</a></li>
-        <li><a href="#why">Why 5×5</a></li>
-        <li><a href="#parents">For Parents</a></li>
-      </ul>
-      <p class="footer-copy">© 2026 TCU Luxury Rentals · Fort Worth, TX · Managed by 24 Doors</p>
+      <ul class="footer-links"><li><a href="#properties">Properties</a></li><li><a href="#why">Why En-Suite</a></li><li><a href="#parents">For Parents</a></li></ul>
+      <div class="footer-right">
+        <img src="images/24doors-logo.png" alt="24 Doors" class="footer-24doors">
+        <p class="footer-copy">&copy; 2026 TCU Luxury Rentals &middot; Fort Worth, TX</p>
+      </div>
     </div>
   </footer>
 
-  <a href="#properties" class="sticky-cta">View Properties & Schedule a Tour</a>
+  <a href="#properties" class="sticky-cta">View Properties &amp; Schedule a Tour</a>
 
   <script>
+    function showYear(year, btn) {
+      document.querySelectorAll('.year-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.year-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('year-' + year).classList.add('active');
+      btn.classList.add('active');
+    }
     const cards = document.querySelectorAll('.property-card');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          setTimeout(() => { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; }, i * 60);
+          setTimeout(() => { entry.target.style.opacity='1'; entry.target.style.transform='translateY(0)'; }, i * 60);
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.08 });
     cards.forEach(card => {
-      card.style.opacity = '0'; card.style.transform = 'translateY(12px)';
-      card.style.transition = 'opacity 0.45s ease, transform 0.45s ease, box-shadow 0.25s, border-color 0.25s';
+      card.style.opacity='0'; card.style.transform='translateY(12px)';
+      card.style.transition='opacity 0.45s ease, transform 0.45s ease, box-shadow 0.25s, border-color 0.25s';
       observer.observe(card);
     });
   </script>
